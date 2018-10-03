@@ -1,0 +1,248 @@
+:root{
+    --primary:#ddd;
+    --hover: rgb(255, 85, 85); 
+    --dark:#333;
+    --light:#fff;
+    --body:rgb(238, 235, 235);
+    --shadow:0 2px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    color:var(--dark);
+    padding: 45px;
+    padding-top: 0%;
+}
+
+body{
+    background: rgb(209, 241, 220);
+    margin: 5px 20px;
+    line-height: 1.4;
+    text-align: left;
+
+}
+
+h1 {
+    font-family: 'Oswald', 'sans-serif';
+    color:black;
+    font-size: 30pt;
+}
+
+p{
+    font-family: 'News Cycle', 'sans-serif';
+    color: black;
+    font-size: 12pt;
+}
+
+/* all the buttons setting (global-class) */
+
+.logo {
+    font-family: 'oswald', 'sans-serif';
+    color: var(--dark);
+    align-content: center;
+    text-align: center;
+    padding-bottom: 1pt;
+    margin-bottom: 1pt;
+    
+}
+
+.logo a{
+    color: var(--dark);
+    padding: 0px;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: var(--dark);
+}
+
+*hyperlink global*/
+
+a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+.title a{
+    color: var(--dark);
+}
+.title a:hover{
+    color: var(--dark);
+}
+
+
+/* navigation settings */
+
+.navigation ul {
+    
+    display: grid;
+    grid-gap: 2rem;
+    padding: 3px;
+    list-style: none;
+    grid-template-columns: repeat(6, 6rem);
+    justify-content: center;
+    padding-bottom: 40px;
+    
+}
+
+.navigation a {
+    font-family: 'Oswald', sans-serif;
+
+    display: block;
+    text-decoration: none;
+    padding:0rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.navigation a:hover {
+    color: var(--hover);
+}
+
+
+.heading{
+    text-align: center;
+    padding:100px 80px;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 2%; 
+    background-image: url('/Images/datascience.jpg')
+
+}
+
+.heading h1{
+    font-family: 'Oswald', 'sans-serif';
+    color:white;
+    font-size: 30pt;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+       ;
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+.a {
+    grid-area: a;
+    background-color: white;
+    padding: 2pc;
+    text-align: center;
+}
+
+
+.b{
+    grid-area: b;
+    background-color: white;
+    padding: 2pc; 
+    text-align: center;
+}
+
+.c{
+    grid-area: c;
+    background-color: white;
+    padding: 2pc;
+    text-align: center;
+}
+
+.port{
+    display: grid;
+    grid-template-areas: 'e d';
+    padding: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    grid-gap: 30px; 
+}
+
+.d{
+    grid-area: d;
+    background-color: white;
+    padding: 2pc;
+    text-align: center;
+}
+
+.e{
+    grid-area: e;
+    background-color: white;
+    padding: 2pc;
+    text-align: center;
+}
+
+
+
+.Text h1{
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 30pt;
+    text-align: center;
+
+}
+
+.GiT ul{
+    
+    display: grid;
+    grid-gap: 6rem;
+    padding: 10px;
+    list-style: none;
+    grid-template-columns: repeat(4, 6rem);
+    
+    justify-content: center;
+    
+}
+
+.GiT a {
+    font-family: 'Oswald', sans-serif;
+
+    display: block;
+    
+    padding: 0rem;
+    
+    color: var(--dark);
+        
+}
+
+
+
+.Github{
+    background-image: url('/Images/GitHub-Mark/PNG/GitHub-Mark-64px.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50px;
+
+}
+
+
+.LinkedIn{
+    background-image: url('/Images/linkedin_logo_package/LinkedInlogo/Screen/2-Color/Logo-2C-115px-R.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 30%;
+    min-height: 50px;
+    
+}
+
+.Twitter {
+    background-image: url('/Images/Twitter/TwitterLogos/Twitter_Logo_Blue/Twitter_Logo_Blue.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50px;
+}
+
+.Instagram {
+    background-image: url('/Images/GlyphLogo_May2016_Onlinev2/Insta.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50px;
+    padding-left: 0%;
+}
+
+.footer p{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    color:whitesmoke;
+}
+
