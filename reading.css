@@ -1,0 +1,201 @@
+:root{
+    --primary:#ddd;
+    --hover: rgb(255, 85, 85); 
+    --dark:#333;
+    --light:#fff;
+    --body:rgb(238, 235, 235);
+    --shadow:0 2px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    color:var(--dark);
+    padding: 45px;
+    padding-top: 0%;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    margin: 5px 20px;
+    
+    
+    
+
+}
+
+h1{
+    font-family: 'Oswald', 'sans-serif';
+    color:black;
+    font-size: 30pt;
+}
+
+p{
+    font-family: 'News Cycle', 'sans-serif';
+    color: black;
+    font-size: 12pt;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'logo navigation C';
+    grid-gap: 1pt;
+    
+    
+}
+
+.logo {
+    font-family: 'oswald', 'sans-serif';
+    color: var(--dark);
+    justify-content: center;
+    padding-top: 8px;
+    padding-right: 0%;
+}
+
+.logo a{
+    color: var(--dark);
+    font-family: 'oswald', 'sans-serif';
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+
+/* navigation settings */
+
+.navigation{
+    grid-area: 'navigation';
+    display: grid;
+    padding: 12pt;;
+    margin:10pt;
+    margin-top: 20pt;
+    padding-left: 0%;
+    
+}
+
+.navigation ul {
+    
+    display: grid;
+    grid-gap: 1pc;
+    list-style: none;
+    grid-template-columns: repeat(6, 6rem);
+    justify-content: left;
+    
+    
+    
+    
+}
+
+.navigation a {
+    font-family: 'Oswald', sans-serif;
+
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.navigation a:hover {
+    color: var(--hover);
+}
+
+
+
+.Content{
+    
+    display: grid;
+    grid-template-areas: 'leftbox visual';
+    grid-gap: 1rem;
+    padding: 2rem;
+}
+
+.leftbox {
+    grid-area: leftbox;
+    background: rgb(0, 255, 221);
+    min-height: 300px;
+    min-width: 10px;
+}
+.leftbox h1{
+    margin: 2%;
+    font-family: 'Arial Narrow', 'san-serif';
+}
+.leftbox p{
+    margin-left: 2%;
+    font-family: 'News Cycle';
+    font-size: 12pt;
+}
+
+.visual{
+    grid-area: visual;
+    background-color: #333;
+    min-width: 400px;
+    min-height: 300px;
+    background-image: url('/Images/Banking.jpeg');
+    background-size: cover;
+}
+
+.Para{
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 1pc;
+    margin: 10%;
+    margin-top: 0%;
+    border-bottom: 1px rgb(255, 85, 85) solid;
+
+}
+
+.bottom{
+    display: grid;
+    grid-template-areas: 
+    'a b b'
+       ;
+    grid-gap: 30px;
+    
+}
+
+.a {
+    grid-area: a;
+    background-color:red;
+    padding: 2pc;
+    text-align: center;
+}
+
+
+.b{
+    grid-area: b;
+    background-color:ivory;
+    padding: 2pc; 
+    text-align: center;
+}
+
+
+
+.port{
+    display: grid;
+    grid-template-areas: 'c d e';
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    grid-gap: 30px; 
+}
+
+.c{
+    grid-area: c;
+    background-color: white;
+    padding: 2pc;
+    text-align: center;
+}
+.d{
+    grid-area: d;
+    background-color: white;
+    padding: 2pc;
+    text-align: center;
+}
+
+.e{
+    grid-area: e;
+    background-color: white;
+    padding: 2pc;
+    text-align: center;
+}
